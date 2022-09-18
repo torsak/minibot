@@ -1,0 +1,28 @@
+version: "3"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    command: ["npm", "run", "dev"]
+    networks:
+      - default
+
+  ngrok:
+    image: ngrok/ngrok:alpine
+    depends_on:
+      - server
+    env_file:
+      - .env
+    ports:
+      - "4040:4040"
+    command: ["http", "server:3000"]
+    networks:
+      - default
+
+networks:
+  default:

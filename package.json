@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@line/bot-sdk": "^7.5.2",
+    "better-sqlite3": "^7.6.2",
     "dotenv": "^16.0.2",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "knex": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0",

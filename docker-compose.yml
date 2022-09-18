@@ -11,6 +11,10 @@ services:
     command: ["npm", "run", "dev"]
     networks:
       - default
+    volumes:
+      - ".:/usr/src/app"
+      - "server_node_module:/usr/src/app/node_modules"
+      - "database:/usr/src/app/database"
 
   ngrok:
     image: ngrok/ngrok:alpine
@@ -26,3 +30,7 @@ services:
 
 networks:
   default:
+
+volumes:
+  server_node_module:
+  database:

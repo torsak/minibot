@@ -13,6 +13,8 @@
   "dependencies": {
     "@line/bot-sdk": "^7.5.2",
     "better-sqlite3": "^7.6.2",
+    "chart.js": "^3.9.1",
+    "chartjs-node-canvas": "^4.1.6",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "knex": "^2.3.0"

@@ -40,7 +40,7 @@ jobs:
         with:
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
-          passphrase: ${{secrets.SSH_PASSPHARSE}}
+          passphrase: ${{secrets.SSH_PASSPHRASE}}
           username: ${{secrets.SSH_USER}}
           
           script: |

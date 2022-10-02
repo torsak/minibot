@@ -44,7 +44,7 @@ jobs:
           username: ${{secrets.SSH_USER}}
           
           script: |
-            mkdir test
+            mkdir -p test
             cd test
             git clone git@github.com:torsak/minibot.git
             echo "Deployment successful to Digital Ocean"

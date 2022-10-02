@@ -42,9 +42,8 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           passphrase: ${{secrets.SSH_PASSPHRASE}}
           username: ${{secrets.SSH_USER}}
-          
           script: |
             mkdir -p test
             cd test
-            git clone git@github.com:torsak/minibot.git
-            echo "Deployment successful to Digital Ocean"
+            ssh -T git@github.com
+            # git clone git@github.com:torsak/minibot.git

@@ -44,4 +44,4 @@ jobs:
           script: |
             mkdir -p test
             cd test
-            git -C minibot pull > /dev/null || git clone git@github.com:torsak/minibot.git
+            git -C minibot pull || git clone git@github.com:torsak/minibot.git > /dev/null
